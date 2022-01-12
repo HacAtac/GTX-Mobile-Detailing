@@ -10,26 +10,26 @@ const serviceSchema = new Schema(
       type: String,
       required: true,
     },
-    individualprice: {
+    individualPrice: {
       type: Number,
       required: true,
     },
-    smallprice: {
+    smallPrice: {
       type: Number,
       required: true,
     },
-    mediumprice: {
+    mediumPrice: {
       type: Number,
       required: true,
     },
-    largeprice: {
+    largePrice: {
       type: Number,
       required: true,
     },
-    imageurls: [],
+    imageUrls: [],
   },
   {
-    timestamps: true,
+    timeStamps: true,
   }
 );
 
