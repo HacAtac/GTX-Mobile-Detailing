@@ -33,6 +33,6 @@ const serviceSchema = new Schema(
   }
 );
 
-const Service = model("service", serviceSchema);
+const Service = model("Service", serviceSchema);
 
 module.exports = Service;
