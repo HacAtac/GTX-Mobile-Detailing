@@ -7,17 +7,17 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
-    password: String
   }
 
   type Service {
     _id: ID
     name: String
     description: String
-    individualPrice: Number
-    smallPrice: Number
-    mediumPrice: Number
-    largePrice: Number
+    individualPrice: Int
+    smallPrice: Int
+    mediumPrice: Int
+    largePrice: Int
+    imageUrls: [String]
   }
 
   type Auth {
@@ -26,13 +26,37 @@ const typeDefs = gql`
   }
 
   type Query {
+    me: User
     users: [User]
     user(username: String!): User
+    services: [Service]
+    service(_id: ID!): Service
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    newService(
+      _id: String!
+      name: String!
+      description: String!
+      individualPrice: Int!
+      smallPrice: Int!
+      mediumPrice: Int!
+      largePrice: Int!
+      imageUrls: [String]!
+    ): User
+    removeService(_id: String!): User
+    updateService(
+      _id: String!
+      name: String!
+      description: String!
+      individualPrice: Int!
+      smallPrice: Int!
+      mediumPrice: Int!
+      largePrice: Int!
+      imageUrls: [String]!
+    ): User
   }
 `;
 
