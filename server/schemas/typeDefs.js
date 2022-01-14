@@ -29,9 +29,11 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     services: [Service]
-    service(_id: ID!): Service
+    service(name: String!): Service
   }
 
+
+ 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
@@ -43,7 +45,7 @@ const typeDefs = gql`
       mediumPrice: Int!
       largePrice: Int!
       imageUrls: [String]!
-    ): Service
+    ) : Service
     removeService(_id: ID!): Service
     updateService(
       _id: ID!
