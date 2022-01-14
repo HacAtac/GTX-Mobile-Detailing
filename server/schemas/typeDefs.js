@@ -9,7 +9,7 @@ const typeDefs = gql`
     email: String
   }
 
-  type Service {
+  type service {
     _id: ID
     name: String
     description: String
@@ -26,18 +26,17 @@ const typeDefs = gql`
   }
 
   type Query {
-    me: User
     users: [User]
     user(username: String!): User
-    services: [Service]
-    service(_id: ID!): Service
+    services: [service]
+    service(_id: ID!): service
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    newService(
-      _id: String!
+    addService(
+      _id: ID!
       name: String!
       description: String!
       individualPrice: Int!
@@ -45,10 +44,10 @@ const typeDefs = gql`
       mediumPrice: Int!
       largePrice: Int!
       imageUrls: [String]!
-    ): User
-    removeService(_id: String!): User
+    ): service
+    removeService(_id: ID!): service
     updateService(
-      _id: String!
+      _id: ID!
       name: String!
       description: String!
       individualPrice: Int!
@@ -56,7 +55,7 @@ const typeDefs = gql`
       mediumPrice: Int!
       largePrice: Int!
       imageUrls: [String]!
-    ): User
+    ): service
   }
 `;
 
