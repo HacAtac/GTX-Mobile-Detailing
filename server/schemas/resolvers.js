@@ -5,22 +5,18 @@ const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
-  //this is the root query for our graphql server and it returns the user object if the user is logged in
-  //if the user is not logged in it returns null and throws an error to the client to handle it
-  //basically this is like using monogoose findOne() method to find a user in the database and returning it
   Query: {
     users: async () => {
-      return User.find().populate("Service");
+      return User.find();
     },
-    user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("Service"); //this is the same as User.findOne({username: username})
-      //what is ('service') is the name of the field in the User model that we want to populate
-    },
+    // user: async (parent, { username }) => {
+    //   return User.findOne({ username }).populate("Service");
+    // },
     services: async () => {
       return Service.find();
     },
-    service: async (parent, { serviceId }) => {
-      return Service.findOne({ _id: serviceId });
+    service: async (parent, { _id }) => {
+      return Service.findOne({ _id: _id });
     },
   },
   Mutation: {
@@ -52,12 +48,15 @@ const resolvers = {
       const service = await Service.create(args);
       return { service };
     },
-    removeService: async (parent, args) => {
+    // _id is the id of the service that is being updated
+    // ({_id: _id}) is the object that is being updated in the database and the id is the id of the service that is being updated
+    removeService: async (parent, { _id }) => {
       return Service.findOneAndDelete({ _id: _id });
     },
-    // updateService: async (parent, args) => {
-    //   const service = await Service.findOneAndUpdate({ _id: _id });
-    // },
+    updateService: async (parent, args) => {
+      const service = await Service.findOneAndUpdate({ _id: _id });
+      return { service };
+    },
   },
 };
 

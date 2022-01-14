@@ -43,6 +43,6 @@ if (process.env.NODE_ENV === "production") {
 
 db.once("open", () => {
   app.listen(PORT, () => {
-    console.log(`(>'.')>||----->${PORT}!`);
+    console.log(`Node/Express server running on port ${PORT}`);
   });
 });
