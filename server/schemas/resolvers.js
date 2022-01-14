@@ -1,6 +1,6 @@
 //const { User } = require("../models");
 const User = require("../models/User");
-// const service = require("../models/service");
+const Service = require("../models/service");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 
@@ -10,11 +10,17 @@ const resolvers = {
   //basically this is like using monogoose findOne() method to find a user in the database and returning it
   Query: {
     users: async () => {
-      return User.find().populate("service");
+      return User.find().populate("Service");
     },
     user: async (parent, { username }) => {
-      return User.findOne({ username }).populate("service"); //this is the same as User.findOne({username: username})
+      return User.findOne({ username }).populate("Service"); //this is the same as User.findOne({username: username})
       //what is ('service') is the name of the field in the User model that we want to populate
+    },
+    services: async () => {
+      return Service.find();
+    },
+    service: async (parent, { serviceId }) => {
+      return Service.findOne({ _id: serviceId });
     },
   },
   Mutation: {
@@ -42,37 +48,6 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-
-    // login: async (parent, args) => {
-    //   const user = await User.findOne({
-    //     $or: [{ username: args.username }, { email: args.email }],
-    //   });
-
-    //   if (!user) {
-    //     throw new AuthenticationError("Incorrect credentials");
-    //   }
-
-    //   const correctPw = await user.isCorrectPassword(args.password);
-
-    //   if (!correctPw) {
-    //     throw new AuthenticationError("Incorrect credentials");
-    //   }
-
-    //   const token = signToken(user);
-    //   return { token, user };
-    // },
-    // login: async (parent, { email, password }) => {
-    //   const user = await User.findOne({ email });
-    //   if (!user) {
-    //     throw new AuthenticationError("No user found with this email address");
-    //   }
-    //   const correctPw = await user.isCorrectPassword(password);
-    //   if (!correctPw) {
-    //     throw new AuthenticationError("Incorrect credentials");
-    //   }
-    //   const token = signToken(user);
-    //   return { token, user };
-    // },
   },
 };
 
