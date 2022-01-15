@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
-import NoMatch from "./screens/NoMatch";
+import NoMatch from "./components/NoMatch";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
