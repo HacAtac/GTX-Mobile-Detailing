@@ -1,12 +1,15 @@
 body {
   margin: 0;
+  background-color: grey;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#body {
+  background-color: rgb(26, 24, 24);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -27,4 +30,64 @@ code {
 
 .navbar-nav {
   margin-left: auto !important;
+}
+
+.page-title {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+}
+.serviceh1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: royalblue;
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.card {
+  margin-bottom: 20px;
+  color: black;
+  padding: 20px;
+  border: blue solid 3px;
+  background-color: rgb(26, 24, 24);
+  border-radius: 20px;
+  width: 75%;
+  flex: flex-wrap;
+  margin: auto;
+  margin-top: 5%;
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#card-ptags {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#price-data {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+.imageUrls {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  border: blue solid 3px;
+  border-radius: 20px;
+  max-height: 400px;
+  max-width: 350em;
 }

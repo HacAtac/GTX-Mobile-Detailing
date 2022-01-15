@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_SERVICES } from "../utils/queries";
 
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 
 // need to use the query from the utils/queries file and get the data to show up on the page
 const Home = () => {
@@ -14,31 +14,35 @@ const Home = () => {
 
   return (
     <div className="flex-column justify-flex-start min-100-vh">
-      <h1 className="text-center">SERVICES</h1>
+      <h1 className="page-title">SERVICES</h1>
       <div className="flex-row justify-space-between">
         {data.services.map((service) => (
           <div className="card" key={service.id}>
-            <h3>{service.name}</h3>
-            <img src={service.imageUrls[0]} alt="service" />
-            <p>{service.description}</p>
+            <h3 className="card-title">{service.name}</h3>
+            <img
+              className="imageUrls"
+              src={service.imageUrls[0]}
+              alt="service"
+            />
+            <p id="card-ptags">{service.description}</p>
             <p>
               {service.individualPrice ? (
-                <span>
+                <span id="price-data">
                   <strong>Individual Price:</strong> ${service.individualPrice}
                 </span>
               ) : null}
               {service.smallPrice ? (
-                <span>
+                <span id="price-data">
                   <strong>Small Price:</strong> ${service.smallPrice}
                 </span>
               ) : null}
               {service.mediumPrice ? (
-                <span>
+                <span id="price-data">
                   <strong>Medium Price:</strong> ${service.mediumPrice}
                 </span>
               ) : null}
               {service.largePrice ? (
-                <span>
+                <span id="price-data">
                   <strong>Large Price:</strong> ${service.largePrice}
                 </span>
               ) : null}
