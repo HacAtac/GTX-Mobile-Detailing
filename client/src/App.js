@@ -10,12 +10,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
+import Signup from "./screens/Signup";
+import Login from "./screens/Login";
 import NoMatch from "./components/NoMatch";
 
-// Construct our main GraphQL API endpoint
+//Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: "http://localhost:3001/graphql",
 });
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
 
 // Construct request middleware that will attach the JWT to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
@@ -46,6 +51,8 @@ function App() {
           <div className="App">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/login" component={Login} />
               <Route component={NoMatch} />
             </Switch>
           </div>

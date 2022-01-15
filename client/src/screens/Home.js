@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_SERVICES } from "../utils/queries";
 
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 
 // need to use the query from the utils/queries file and get the data to show up on the page
 const Home = () => {
