@@ -13,6 +13,7 @@ import Home from "./screens/Home";
 import Signup from "./screens/Signup";
 import Login from "./screens/Login";
 import AddService from "./screens/AddService";
+// import UpdateService from "./screens/UpdateService";
 import NoMatch from "./components/NoMatch";
 
 //Construct our main GraphQL API endpoint
@@ -55,6 +56,11 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/newservice" component={AddService} />
+              {/* <Route
+                exact
+                path="/updateservice/:id"
+                component={UpdateService}
+              /> */}
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/login" component={Login} />
               <Route component={NoMatch} />
