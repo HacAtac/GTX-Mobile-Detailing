@@ -25,7 +25,7 @@ const Home = () => {
               alt="service"
             />
             <p id="card-ptags">{service.description}</p>
-            <p>
+            <p className="card-price">
               {service.individualPrice ? (
                 <span id="price-data">
                   <strong>Individual Price:</strong> ${service.individualPrice}
