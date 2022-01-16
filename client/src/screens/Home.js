@@ -1,6 +1,9 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_SERVICES } from "../utils/queries";
+import { REMOVE_SERVICE } from "../utils/mutations";
+import Auth from "../utils/auth";
+import { Link } from "react-router-dom";
 
 // import "antd/dist/antd.css";
 
@@ -11,6 +14,32 @@ const Home = () => {
   //it is a hook that allows us to use the query from the utils/queries file and get the data to show up on the page
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
+
+  //if a user is logged in then show a delete button on inside of the cards that target the specific service
+  //if a user is not logged in then show a login button on inside of the cards that target the specific service
+  const deleteService = async (id) => {
+    try {
+      const { data } = await REMOVE_SERVICE({
+        variables: { id },
+        refetchQueries: [{ query: QUERY_SERVICES }],
+      });
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const editService = async (id) => {
+    try {
+      const { data } = await REMOVE_SERVICE({
+        variables: { id },
+        refetchQueries: [{ query: QUERY_SERVICES }],
+      });
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
     <div className="flex-column justify-flex-start min-100-vh">
@@ -47,6 +76,29 @@ const Home = () => {
                 </span>
               ) : null}
             </p>
+            {Auth.loggedIn() ? (
+              <>
+                <span>Hey there, {Auth.getProfile().data.username}!</span>
+                <button
+                  className="delete-button"
+                  onClick={() => deleteService(service.id)}
+                >
+                  Delete
+                </button>
+                <button
+                  className="edit-button"
+                  onClick={() => editService(service.id)}
+                >
+                  Edit
+                </button>
+              </>
+            ) : (
+              <>
+                <Link className="btn btn-lg btn-info m-2" to="/booking">
+                  Book Now
+                </Link>
+              </>
+            )}
           </div>
         ))}
       </div>
