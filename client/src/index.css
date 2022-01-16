@@ -89,5 +89,10 @@ code {
   border: blue solid 3px;
   border-radius: 20px;
   max-height: 400px;
-  max-width: 350em;
+}
+
+.card-price {
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }

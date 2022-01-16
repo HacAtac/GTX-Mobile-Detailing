@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Signup from "./screens/Signup";
 import Login from "./screens/Login";
+import AddService from "./screens/AddService";
 import NoMatch from "./components/NoMatch";
 
 //Construct our main GraphQL API endpoint
@@ -35,6 +36,8 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+//how would I make the the request middleware attach only to the signup and login routes?
+
 const client = new ApolloClient({
   // Set up our client to execute queries and mutations using the endpoint
   // Set up our client to execute the `authLink` middleware before each request
@@ -51,6 +54,7 @@ function App() {
           <div className="App">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/newservice" component={AddService} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/login" component={Login} />
               <Route component={NoMatch} />
