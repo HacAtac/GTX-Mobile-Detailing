@@ -37,11 +37,7 @@ function Navbar() {
                     AddService
                   </a>
                 </li>
-                <li className="navbar-nav">
-                  <a className="nav-link" href="/updateservice">
-                    UpdateService
-                  </a>
-                </li>
+
                 <li className="nav-item active">
                   <a className="nav-link" href="/bookings">
                     BookNow!
