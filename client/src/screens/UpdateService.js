@@ -14,18 +14,7 @@ function UpdateService() {
   const [largePrice, setLargePrice] = useState("");
 
   const { loading, error, data } = useQuery(QUERY_SERVICES);
-  // const [updateService] = useMutation(UPDATE_SERVICE, {
-  //   variables: {
-  //     _id: "_id",
-  //     name,
-  //     description,
-  //     imageUrls,
-  //     individualPrice: parseInt(individualPrice),
-  //     smallPrice: parseInt(smallPrice),
-  //     mediumPrice: parseInt(mediumPrice),
-  //     largePrice: parseInt(largePrice),
-  //   },
-  // });
+
   // useMutation for UPDATE_SERVICE that only  updates the data that is being passed in from the form
   const [updateService] = useMutation(UPDATE_SERVICE, {
     variables: {
