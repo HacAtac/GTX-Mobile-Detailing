@@ -5,13 +5,25 @@ import { QUERY_SERVICES } from "../utils/queries";
 import { REMOVE_SERVICE } from "../utils/mutations";
 import Auth from "../utils/auth";
 import { Link } from "react-router-dom";
+import UpdateService from "./UpdateService";
 
 // need to use the query from the utils/queries file and get the data to show up on the page
 const Home = () => {
-  //utilize REMOVE_SERVICE mutation
+  //use mutation function to remove service when the user clicks on the delete button
   const [removeService] = useMutation(REMOVE_SERVICE, {
-    variables: {
-      _id: "_id",
+    update(cache, { data: { removeService } }) {
+      //update is a function that takes in the cache and the data that is being returned from the mutation and updates the cache with the new data from the mutation
+      console.log(cache);
+      //readQuery is a function that takes in the query and returns the data from the cache
+      const { services } = cache.readQuery({ query: QUERY_SERVICES });
+      cache.writeQuery({
+        query: QUERY_SERVICES,
+        data: {
+          services: services.filter(
+            (service) => service._id !== removeService._id
+          ),
+        },
+      });
     },
   });
 
@@ -20,18 +32,6 @@ const Home = () => {
   //it is a hook that allows us to use the query from the utils/queries file and get the data to show up on the page
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
-
-  const editService = async (_id) => {
-    try {
-      const { data } = await REMOVE_SERVICE({
-        variables: { _id },
-        refetchQueries: [{ query: QUERY_SERVICES }],
-      });
-      console.log(data);
-    } catch (err) {
-      console.error(err);
-    }
-  };
 
   return (
     <div className="flex-column justify-flex-start min-100-vh">
@@ -74,15 +74,18 @@ const Home = () => {
 
                 <button
                   className="delete-button"
-                  onClick={() => removeService(service._id)}
+                  onClick={() =>
+                    removeService({ variables: { _id: service._id } })
+                  }
                 >
                   Delete
                 </button>
-
-                <Link to={`/updateservice/${service._id}`}>
+                <Link to={`/updateService/${service._id}`}>
                   <button
                     className="edit-button"
-                    onClick={() => editService(service._id)}
+                    onClick={() =>
+                      UpdateService({ variables: { _id: service._id } })
+                    }
                   >
                     Edit
                   </button>

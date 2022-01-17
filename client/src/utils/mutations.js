@@ -30,6 +30,39 @@ export const ADD_SERVICE = gql`
   }
 `;
 
+// UPDATE_SERVICE mutation that will update the service with the given id
+export const UPDATE_SERVICE = gql`
+  mutation updateService(
+    $_id: ID!
+    $name: String!
+    $description: String!
+    $individualPrice: Int!
+    $smallPrice: Int!
+    $mediumPrice: Int!
+    $largePrice: Int!
+    $imageUrls: [String]!
+  ) {
+    updateService(
+      _id: $_id
+      name: $name
+      description: $description
+      individualPrice: $individualPrice
+      smallPrice: $smallPrice
+      mediumPrice: $mediumPrice
+      largePrice: $largePrice
+      imageUrls: $imageUrls
+    ) {
+      name
+      description
+      individualPrice
+      smallPrice
+      mediumPrice
+      largePrice
+      imageUrls
+    }
+  }
+`;
+
 export const REMOVE_SERVICE = gql`
   mutation removeService($_id: ID!) {
     removeService(_id: $_id) {
