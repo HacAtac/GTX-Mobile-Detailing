@@ -13,16 +13,16 @@ function AddService() {
   const [largePrice, setLargePrice] = useState("");
 
   const { loading, error, data } = useQuery(QUERY_SERVICES);
-
+  //where is [addService] coming from? // it is a mutation from the ADD_SERVICE mutation
   const [addService] = useMutation(ADD_SERVICE, {
     variables: {
       name,
       description,
       imageUrls,
-      individualPrice,
-      smallPrice,
-      mediumPrice,
-      largePrice,
+      individualPrice: parseInt(individualPrice),
+      smallPrice: parseInt(smallPrice),
+      mediumPrice: parseInt(mediumPrice),
+      largePrice: parseInt(largePrice),
     },
   });
 
@@ -59,28 +59,29 @@ function AddService() {
           <h3 className="card-title">Individual Price</h3>
           <input
             className="input-field"
-            type="text"
+            //input type of Int!
+            type="integer"
             value={individualPrice}
             onChange={(e) => setIndividualPrice(e.target.value)}
           />
           <h3 className="card-title">Small Price</h3>
           <input
             className="input-field"
-            type="text"
+            type="integer"
             value={smallPrice}
             onChange={(e) => setSmallPrice(e.target.value)}
           />
           <h3 className="card-title">Medium Price</h3>
           <input
             className="input-field"
-            type="text"
+            type="integer"
             value={mediumPrice}
             onChange={(e) => setMediumPrice(e.target.value)}
           />
           <h3 className="card-title">Large Price</h3>
           <input
             className="input-field"
-            type="text"
+            type="integer"
             value={largePrice}
             onChange={(e) => setLargePrice(e.target.value)}
           />
