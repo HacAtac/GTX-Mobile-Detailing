@@ -54,7 +54,9 @@ const resolvers = {
       return Service.findOneAndDelete({ _id: _id });
     },
     updateService: async (parent, args) => {
-      const service = await Service.findOneAndUpdate({ _id: _id });
+      const { _id, ...rest } = args;
+      const service = await Service.findOneAndUpdate(_id, rest);
+      console.log(service);
       return { service };
     },
   },
