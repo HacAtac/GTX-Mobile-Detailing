@@ -51,6 +51,17 @@
 
 ## Languages
 
+- JavaScript
+- CSS
+- React
+- JSX
+
 ## User Story
 
 ## Features
+
+- Calendly API (Booking-future development)
+- login (Authentication)
+- Add Service
+- Update Service
+- Stripe (Payment-future development)
