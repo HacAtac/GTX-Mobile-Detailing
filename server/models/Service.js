@@ -12,19 +12,19 @@ const serviceSchema = new Schema(
     },
     individualPrice: {
       type: Number,
-      required: true,
+      required: false,
     },
     smallPrice: {
       type: Number,
-      required: true,
+      required: false,
     },
     mediumPrice: {
       type: Number,
-      required: true,
+      required: false,
     },
     largePrice: {
       type: Number,
-      required: true,
+      required: false,
     },
     imageUrls: [],
   },
