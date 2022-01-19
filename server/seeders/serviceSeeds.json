@@ -1,42 +1,352 @@
 [
+  {
+     "name":"PREMIER",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/56303/medium/597f0e48823f8885.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/56303/medium/06883e94ec59702e.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/56303/medium/91dead74a5dffa61.jpg"
+     ],
+     "smallPrice":129,
+     "mediumPrice":145,
+     "largePrice":159,
+     "description":"Wash, Dry, Carnauba Wax, Tire Dressing, Window Cleaning(Exterior only), Vacuum floor boards, mats and seats, wipedown cupholders, dash, door panels, and door jambs."
+  },
+  {
+     "name":"PREMIUM",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/105649/large/8e80e24a5496eb80.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/105649/large/caef038a4b97b589.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/105649/large/46bffe91d06dcb96.jpg"
+     ],
+     "smallPrice":169,
+     "mediumPrice":199,
+     "largePrice":229,
+     "description":"Wash, Polish and Paint Sealant applied, Dry, Tire Dressing, Window Cleaning Exterior and Interior, Interior Vacuum includes trunks, upholstery, and floor boards, Light Pet Hair and Stain removal, Wipe down the interior of the vehicle including door jambs, Protectants on all hard surfaces."
+  },
+  {
+     "name":"PREMIUM INTERIOR ONLY",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/107625/large/4488071a59d38cc5.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/107625/large/d452b4897a767f6b.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/107625/large/8f690e54761344e0.jpg"
+     ],
+      "smallPrice":129,
+     "mediumPrice":159,
+     "largePrice":179,
+     "description":"Window Cleaning Interior, Interior Vacuum Includes: trunks, upholstery, and floor boards, Light Pet Hair and Stain Removal, We wipe down the interior of the vehicle including door jambs, Protectants on all hard surfaces, Clean Interior of Windows."
+  },
+  {
+     "name":"PLATINUM",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "smallPrice":299,
+     "mediumPrice":349,
+     "largePrice":399,
+     "description":"Wash & Dry, Tire Dressing, Wheels cleaned and polished, Polish and Paint Sealant applied, Window Cleaning Exterior and Interior, Interior Vacuum Includes: trunks, upholstery, and floor boards, Deep Pet Hair and Stain removal, Wipe down entire interior of the vehicle from the headliners down to the floor boards and door jambs, Protectants on all hard surfaces, Leather Treatment, Carpets & Upholstery Shampooed."
+  },
+  {
+     "name":"PLATINUM INTERIOR ONLY",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/38668/large/414e401312ad45a7.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/38668/large/d24b920cfdddeecb.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/38668/large/58025558878fa4ec.jpg"
+     ],
+    "smallPrice":299,
+     "mediumPrice":349,
+     "largePrice":399,
+     "description":"Interior Vacuum Includes: trunks, upholstery, and floors. Deep pet hair and stain removal. Wipe down entire interior of the vehicle from the headliner down to the floor boards and door jambs. Protectants on all hard surfaces. Leather Treatment. Carpets & Upholstery Shampooed. Window Cleaning Exterior and Interior."
+  },
+     {
+     "name":"CARPET SHAMPOO",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"Shampoo your carpets."
+  },
+  {
+     "name":"UPHOLSTERY SHAMPOO",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"Shampoo your upholstery."
+  },
+  {
+     "name":"CARPET FLOOR MATS",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":45,
+     "description":"Clean your carpet floor mats."
+  },
+   {
+     "name":"SYNTHETIC RUBBER FLOOR MAT REJUVENATOR",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":45,
+     "description":"Bring your rubber floor mats back to life!"
+  },
+   {
+     "name":"LEATHER CONDITIONER",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":39,
+     "description":"Make sure that your beautiful leather stays in great condition."
+  },
+   {
+     "name":"LEATHER CLEANING AND CONDITIONING",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"We would love to clean your leather that has been worn over the years, and we also will condition it so it lasts."
+  },
+   {
+     "name":"PET HAIR REMOVAL",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"Pet hair removal."
+  },
     {
-      "thoughtText": "Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?",
-      "thoughtAuthor": "Brian Kernighan"
-    },
-    {
-      "thoughtText": "Some of the best programming is done on paper, really. Putting it into the computer is just a minor detail.",
-      "thoughtAuthor": "Max Kanat-Alexander"
-    },
-    {
-      "thoughtText": "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.",
-      "thoughtAuthor": "Why The Lucky Stiff"
-    },
-    {
-      "thoughtText": "I'm not a great programmer; I'm just a good programmer with great habits.",
-      "thoughtAuthor": "Kent Beck"
-    },
-    {
-      "thoughtText": "Walking on water and developing software from a specification are easy if both are frozen.",
-      "thoughtAuthor": "Edward V. Berard"
-    },
-    {
-      "thoughtText": "The most disastrous thing that you can ever learn is your first programming language.",
-      "thoughtAuthor": "Alan Kay"
-    },
-    {
-      "thoughtText": "The most important property of a program is whether it accomplishes the intention of its user.",
-      "thoughtAuthor": "C.A.R. Hoare"
-    },
-    {
-      "thoughtText": "Delivering good software today is often better than perfect software tomorrow, so finish things and ship.",
-      "thoughtAuthor": "David Thomas"
-    },
-    {
-      "thoughtText": "If you optimize everything, you will always be unhappy.",
-      "thoughtAuthor": "Donald Knuth"
-    },
-    {
-      "thoughtText": "It's not a bug; it's an undocumented feature.",
-      "thoughtAuthor": "Lernantino"
-    }
-  ]
+     "name":"SMOKE AND/OR OTHER ODOR REMOVAL",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":39,
+     "description":"Get rid of that lingering odor removal"
+  },
+   {
+     "name":"HARD SURFACE PROTECTANTS",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":65,
+     "description":"Protect your hard surfaces with my expertise."
+  },
+   {
+     "name":"UNDER CARRIAGE WASH",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":15,
+     "description":"Clean under your car."
+  },
+   {
+     "name":"HEAVILY SOILED TRUCK BED CLEANED",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"Get rid of that gross truck bed."
+  },
+   {
+     "name":"HEADLIGHT RESTORATION",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"Restore your headlights."
+  },
+   {
+     "name":"HEADLIGHT RESTORATION W/CERAKOTE",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":69,
+     "description":"Premium cleaning of your headlights. This works great!"
+  },
+   {
+     "name":"EXHAUST TIPS POLISHED",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":39,
+     "description":"Restore your worn exhaust tip."
+  },
+   {
+     "name":"WINDOWS POLISHED & PROTECTED",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"We will polish your windows, then protect them against the elements."
+  },
+   {
+     "name":"WINDOW PROTECTANT",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":69,
+     "description":"Protect against the elements."
+  },
+   {
+     "name":"CHROME TRIM POLISHED",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":19,
+     "description":"We'd love to polish your chrome trim on your vehicle."
+  },
+   {
+     "name":"TREE SAP AND BUG REMOVAL",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":79,
+     "description":"Get rid of those hard to remove things like tree sap and bugs."
+  },
+   {
+     "name":"CLAY BAR AND POLISH",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":129,
+     "description":"We will use clay bar and polish your vehicle. This really works great."
+  },
+   {
+     "name":"SEALANT W/ONE OF OUR COMBOS OR CLAY BAR AND POLISH SERVICE ONLY",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":49,
+     "description":"Sealant with one of our combos, or you can do clay bar and polish service only."
+  },
+   {
+     "name":"CERAMIC COATING",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":599,
+     "description":"Ceramic coating on your vehicle, this will start from $599"
+  },
+   {
+     "name":"ENGINE BAY DETAIL",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "description":"ESTIMATE ONLY"
+  },
+   {
+     "name":"TIRE REJUVENATOR",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"Restore your tires to look the best that they can"
+  },
+   {
+     "name":"TIRE SHINE",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"Shine your tires."
+  },
+   {
+     "name":"BRAKE DUST REMOVAL",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"Remove that build up from your brakes."
+  },
+   {
+     "name":"WHEELS POLISHED",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":59,
+     "description":"Polish your wheels to look nice and shiny."
+  },
+   {
+     "name":"POLISHED BUMPER",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":29,
+     "description":"For 29 each you can get your bumpers polished"
+  },
+   {
+     "name":"POLISHED GRILLE GUARD",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":39,
+     "description":"Polish your grill guard to look the best it can."
+  },
+ {
+     "name":"TEST TEST TEST TEST TEST",
+     "imageUrls":[
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/e225bbf160a11c02.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/d55361043c9b52af.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+     ],
+     "individualPrice":99,
+     "description":"TEST TEST TEST TEST TEST."
+  }
+ 
+ ]

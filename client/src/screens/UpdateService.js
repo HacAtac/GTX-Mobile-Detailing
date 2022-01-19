@@ -15,7 +15,7 @@ function UpdateService() {
 
   const { loading, error, data } = useQuery(QUERY_SERVICES);
 
-  // useMutation for UPDATE_SERVICE that only  updates the data that is being passed in from the form
+  // useMutation for UPDATE_SERVICE that updates the data that is being passed in from the form
   const [updateService] = useMutation(UPDATE_SERVICE, {
     variables: {
       _id: "_id",
@@ -28,7 +28,8 @@ function UpdateService() {
       largePrice: parseInt(largePrice),
     },
     update(cache, { data: { updateService } }) {
-      //update is a function that takes in the cache and the data that is being returned from the mutation and updates the cache with the new data from the mutation
+      //update is a function that takes in the cache and the data that is being returned from the mutation
+      //and updates the cache with the new data from the mutation
       console.log(cache);
       //readQuery is a function that takes in the query and returns the data from the cache
       const { services } = cache.readQuery({ query: QUERY_SERVICES });
@@ -59,14 +60,14 @@ function UpdateService() {
             className="input-field"
             type="text"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)} //were using state to update the name state
           />
           <h3 className="card-title">Description</h3>
           <input
             className="input-field"
             type="text"
             value={description}
-            onChange={(e) => setDescription(e.target.value)}
+            onChange={(e) => setDescription(e.target.value)} //what is (e) here? // it is the event that is being passed in
           />
           <h3 className="card-title">Image Urls</h3>
           <input
