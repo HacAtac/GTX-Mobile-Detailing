@@ -62,6 +62,5 @@
 
 - Calendly API (Booking-future development)
 - login (Authentication)
-- Add Service
-- Update Service
+- CRUD methods on services.
 - Stripe (Payment-future development)
