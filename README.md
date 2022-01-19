@@ -13,7 +13,7 @@
 
 ## Technologies
 
-- MongoDB with Mongoose ORM
+- MongoDB with Mongoose ODM
 
 - Express
 
