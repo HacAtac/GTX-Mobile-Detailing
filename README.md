@@ -25,7 +25,7 @@
 
 - Server: Express Node.js
 
-- Database handling: MongoDB / Mongoose ORM
+- Database handling: MongoDB / Mongoose ODM
 
 - MVC Design Pattern
 
