@@ -35,22 +35,22 @@ const typeDefs = gql`
     addService(
       name: String!
       description: String!
-      individualPrice: Int!
-      smallPrice: Int!
-      mediumPrice: Int!
-      largePrice: Int!
+      individualPrice: Int
+      smallPrice: Int
+      mediumPrice: Int
+      largePrice: Int
       imageUrls: [String]!
     ): Service
     removeService(_id: ID!): Service
     updateService(
       _id: ID!
-      name: String!
-      description: String!
-      individualPrice: Int!
-      smallPrice: Int!
-      mediumPrice: Int!
-      largePrice: Int!
-      imageUrls: [String]!
+      name: String
+      description: String
+      individualPrice: Int
+      smallPrice: Int
+      mediumPrice: Int
+      largePrice: Int
+      imageUrls: [String]
     ): Service
   }
 `;

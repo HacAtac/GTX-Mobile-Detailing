@@ -4,10 +4,10 @@ export const ADD_SERVICE = gql`
   mutation addService(
     $name: String!
     $description: String!
-    $individualPrice: Int!
-    $smallPrice: Int!
-    $mediumPrice: Int!
-    $largePrice: Int!
+    $individualPrice: Int
+    $smallPrice: Int
+    $mediumPrice: Int
+    $largePrice: Int
     $imageUrls: [String]!
   ) {
     addService(
@@ -34,13 +34,13 @@ export const ADD_SERVICE = gql`
 export const UPDATE_SERVICE = gql`
   mutation updateService(
     $_id: ID!
-    $name: String!
-    $description: String!
-    $individualPrice: Int!
-    $smallPrice: Int!
-    $mediumPrice: Int!
-    $largePrice: Int!
-    $imageUrls: [String]!
+    $name: String
+    $description: String
+    $individualPrice: Int
+    $smallPrice: Int
+    $mediumPrice: Int
+    $largePrice: Int
+    $imageUrls: [String]
   ) {
     updateService(
       _id: $_id
