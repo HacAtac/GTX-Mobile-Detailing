@@ -13,7 +13,7 @@
 
 ## Technologies
 
-- MongoDB with Mongoose ORM
+- MongoDB with Mongoose ODM
 
 - Express
 
@@ -25,7 +25,7 @@
 
 - Server: Express Node.js
 
-- Database handling: MongoDB / Mongoose ORM
+- Database handling: MongoDB / Mongoose ODM
 
 - MVC Design Pattern
 
@@ -51,6 +51,16 @@
 
 ## Languages
 
+- JavaScript
+- CSS
+- React
+- JSX
+
 ## User Story
 
 ## Features
+
+- Calendly API (Booking-future development)
+- login (Authentication)
+- CRUD methods on services.
+- Stripe (Payment-future development)
