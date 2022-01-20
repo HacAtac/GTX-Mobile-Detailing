@@ -48,6 +48,7 @@
 - [Kumiko Yamagata](https://kumiyam.github.io/My-Portfolio2/)
 
 ## Deployed Application
+https://gtxdetailing.herokuapp.com/
 
 ## Languages
 
