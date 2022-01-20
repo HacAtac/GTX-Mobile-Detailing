@@ -38,17 +38,22 @@ function Navbar() {
                   </a>
                 </li>
 
-                <li className="nav-item active">
-                  <a className="nav-link" href="/bookings">
+                {/* <li className="nav-item active">
+                  <a className="nav-link" href="/booking">
                     BookNow!
+                  </a>
+                </li> */}
+                <li className="nav-item active">
+                  <a className="nav-link" href="/booking">
+                    Book Now
                   </a>
                 </li>
               </>
             ) : (
               <>
                 <li className="nav-item active">
-                  <a className="nav-link" href="/bookings">
-                    BookNow!
+                  <a className="nav-link" href="/booking">
+                    Book Now
                   </a>
                 </li>
               </>
