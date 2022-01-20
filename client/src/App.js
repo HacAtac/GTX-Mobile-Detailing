@@ -17,6 +17,11 @@ import UpdateService from "./screens/UpdateService";
 import NoMatch from "./components/NoMatch";
 import Booking from "./screens/Booking";
 
+//httpLink is causing all kinds of issues.
+const httpLink = createHttpLink({
+  uri: "https://gtxdetailing.herokuapp.com/graphql",
+});
+
 //Construct our main GraphQL API endpoint
 // const httpLink = createHttpLink({
 //   uri: "http://localhost:3001/graphql",
@@ -25,9 +30,9 @@ import Booking from "./screens/Booking";
 //   uri: "/graphql",
 // });
 
-const httpLink = createHttpLink({
-  uri: "/graphql",
-});
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
 
 // Construct request middleware that will attach the JWT to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
