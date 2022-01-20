@@ -15,6 +15,7 @@ import Login from "./screens/Login";
 import AddService from "./screens/AddService";
 import UpdateService from "./screens/UpdateService";
 import NoMatch from "./components/NoMatch";
+import Booking from "./screens/Booking";
 
 //Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -63,6 +64,7 @@ function App() {
               />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/bookings" component={Booking} />
               <Route component={NoMatch} />
             </Switch>
           </div>
