@@ -38,7 +38,7 @@ const Home = () => {
       <h1 className="page-title">SERVICES</h1>
       <div className="flex-row justify-space-between">
         {data.services.map((service) => (
-          <div className="card" key={service.id}>
+          <div className="card" key={service._id}>
             <h3 className="card-title">{service.name}</h3>
             <img
               className="imageUrls"
@@ -46,7 +46,7 @@ const Home = () => {
               alt="service"
             />
             <p id="card-ptags">{service.description}</p>
-            <p className="card-price">
+            <p className="card-price" id="prices">
               {service.individualPrice ? (
                 <span id="price-data">
                   <strong>Individual Price:</strong> ${service.individualPrice}

@@ -96,3 +96,15 @@ code {
   font-weight: bold;
   color: white;
 }
+
+/*MEDIA QUERY FOR SMALLER SCREENS */
+@media screen and (max-width: 414px) {
+  /* title beside different sections with border */
+  .card {
+    width: 80%;
+  }
+
+  #prices {
+    flex-direction: row;
+  }
+}
