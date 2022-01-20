@@ -1,7 +1,6 @@
 const db = require("../config/connection");
 const { Service } = require("../models");
 const serviceSeeds = require("./serviceSeeds.json");
-<<<<<<< HEAD
 
 db.once("open", async () => {
   try {
@@ -23,16 +22,3 @@ db.once("open", async () => {
   console.log("all done!");
   process.exit(0);
 });
-=======
-db.once("open", async () => {
-  try {
-    await Service.deleteMany({});
-    await Service.create(serviceSeeds);
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
-  console.log("all done!");
-  process.exit(0);
-});
->>>>>>> 6b51d1340d86e45be945e2958b540755ad43b31f
