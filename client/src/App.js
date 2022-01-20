@@ -22,14 +22,6 @@ const httpLink = createHttpLink({
   uri: "https://gtxdetailing.herokuapp.com/graphql",
 });
 
-//Construct our main GraphQL API endpoint
-// const httpLink = createHttpLink({
-//   uri: "http://localhost:3001/graphql",
-// });
-// const httpLink = createHttpLink({
-//   uri: "/graphql",
-// });
-
 // const httpLink = createHttpLink({
 //   uri: "/graphql",
 // });
