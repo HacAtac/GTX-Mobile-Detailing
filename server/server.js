@@ -49,6 +49,7 @@
 //   });
 // });
 
+// DEPLOYMENT ISSUES CAME FROM ABOVE LETS REVIEW SO WE KNOW WHAT WENT WRONG
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
