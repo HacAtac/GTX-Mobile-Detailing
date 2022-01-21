@@ -9,8 +9,8 @@ function Navbar() {
   };
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="/">
+      <nav className="navbar navbar-expand-lg" id="nav">
+        <a className="navbar-brand" id="nav-title" href="/">
           GTX-Mobile-Detailing
         </a>
         <button
@@ -22,29 +22,32 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon">
+            <i className="fa fa-bars" style={{ color: "royalblue" }}></i>
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             {Auth.loggedIn() ? (
               <>
-                <span>Hey there, {Auth.getProfile().data.username}!</span>
-                <button className="btn btn-lg btn-light m-2" onClick={logout}>
+                <span id="username">
+                  Hey there, {Auth.getProfile().data.username}!
+                </span>
+                <button
+                  id="logoutbtn"
+                  className="btn btn-sm btn-light m-2"
+                  onClick={logout}
+                >
                   logout
                 </button>
-                <li className="navbar-nav">
+                <li id="navbtns" className="navbar-nav">
                   <a className="nav-link" href="/newservice">
-                    AddService
+                    Add Service
                   </a>
                 </li>
 
-                {/* <li className="nav-item active">
-                  <a className="nav-link" href="/booking">
-                    BookNow!
-                  </a>
-                </li> */}
-                <li className="nav-item active">
-                  <a className="nav-link" href="/booking">
+                <li id="navbtns" className="nav-item active">
+                  <a className="nav-link" id="nav-book-btn" href="/booking">
                     Book Now
                   </a>
                 </li>
