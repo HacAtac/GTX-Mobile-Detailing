@@ -62,7 +62,7 @@ https://gtxdetailing.herokuapp.com/
 
 ## Features
 
-- Calendly API (Booking-future development)
-- login (Authentication)
-- CRUD methods on services.
+- Calendly API for booking services
+- login (Authentication with JWT)
+- CRUD methods on services for business owner.
 - Stripe (Payment-future development)
