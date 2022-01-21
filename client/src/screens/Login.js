@@ -41,10 +41,12 @@ const Login = (props) => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Login</h4>
+    <main className="">
+      <div className="">
+        <div className="card" id="login-card">
+          <h4 className="card-header bg-dark text-light p-2" id="login-header">
+            Login
+          </h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -52,9 +54,10 @@ const Login = (props) => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit}>
+              <form id="login-form" onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
+                  id="form-input"
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -63,6 +66,7 @@ const Login = (props) => {
                 />
                 <input
                   className="form-input"
+                  id="form-input"
                   placeholder="******"
                   name="password"
                   type="password"
@@ -71,6 +75,7 @@ const Login = (props) => {
                 />
                 <button
                   className="btn btn-block btn-primary"
+                  id="login-button"
                   style={{ cursor: "pointer" }}
                   type="submit"
                 >

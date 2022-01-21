@@ -19,8 +19,12 @@ import Booking from "./screens/Booking";
 
 //Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "http://localhost:3001/graphql",
+  uri: "https://gtxdetailing.herokuapp.com/graphql",
 });
+// const httpLink = createHttpLink({
+//   uri: "/graphql",
+// });
+
 // const httpLink = createHttpLink({
 //   uri: "/graphql",
 // });
