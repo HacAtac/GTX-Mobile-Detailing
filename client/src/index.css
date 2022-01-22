@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 #body {
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(77, 70, 70);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -16,16 +16,20 @@ code {
 }
 
 .navbar {
-  background-color: blue !important;
+  background-color: rgb(157, 14, 14) !important;
   flex-wrap: wrap;
 }
 
 .nav-link {
   color: white !important;
+  font-size: 30px;
 }
 
 .navbar-brand {
-  color: white !important;
+  color: rgb(39, 34, 34) !important;
+  font-size: 40px;
+  font-family: small-caps large "Casteller";
+  font-weight: bold;
 }
 
 .navbar-nav {
@@ -34,7 +38,7 @@ code {
 
 .page-title {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   margin-top: 2em;
   margin-bottom: 0.5em;
