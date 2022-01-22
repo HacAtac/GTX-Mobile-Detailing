@@ -49,7 +49,10 @@ GTX Mobile Detailing is committed to providing a stress-free, valuable experienc
 
 ## Deployed Application
 https://gtxdetailing.herokuapp.com/
-![image](https://user-images.githubusercontent.com/87215152/150443645-d58cffcf-ff94-47d4-919f-ca7febec3572.png)
+![image](https://user-images.githubusercontent.com/87215152/150638994-92b58ebd-89dc-4fff-b3b9-89e7a119835b.png)
+
+
+
 
 ## Languages
 
