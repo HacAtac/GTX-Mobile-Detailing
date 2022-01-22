@@ -54,12 +54,12 @@ code {
 }
 .card {
   margin-bottom: 20px;
-  color: black;
+  color: steelblue;
   padding: 20px;
-  border: blue solid 3px;
-  background-color: rgb(26, 24, 24);
+  border: white 3px;
+  background-color: steelblue;
   border-radius: 20px;
-  width: 75%;
+  width: 30%;
   flex: flex-wrap;
   margin: auto;
   margin-top: 5%;
@@ -90,7 +90,7 @@ code {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 2%;
-  border: blue solid 3px;
+  border: rgb(102, 102, 104) solid 3px;
   border-radius: 20px;
   max-height: 400px;
 }
