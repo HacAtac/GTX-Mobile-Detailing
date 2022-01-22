@@ -22,9 +22,16 @@ const App = () => {
           stripeKey="pk_test_51KGGcjDQw3iOHoMjGmIYfxSZYBPdKjlyNY9C5XexdLbB5BdS68lD6Ittw0vW5Om1b1wBJJvKz5iXxFrloofkboVa00alz32OHF"
         />
       </div>
-      <div className="calendly " id="calendly">
+      <div className="calendly" id="calendly">
         <InlineWidget url="https://calendly.com/hacatac" />
       </div>
+      {/* <div className="policy" id="policy">
+        <Link to={`/policy/${policy._id}`}>
+          <button className="policy-button" id="policy-btn">
+            Our Policy
+          </button>
+        </Link>
+      </div> */}
     </div>
   );
 };
