@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^7.0.0"
   },
   "dependencies": {
-    "apollo": "^2.33.9",
+    "apollo": "^2.10.3",
     "express": "^4.17.2"
   }
 }
