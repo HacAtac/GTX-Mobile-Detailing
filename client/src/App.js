@@ -70,6 +70,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/booking" component={Booking} />
               <Route component={NoMatch} />
+              <Route component={Footer} />
             </Switch>
           </div>
         </div>
