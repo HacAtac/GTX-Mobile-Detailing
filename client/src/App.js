@@ -3,7 +3,7 @@ import {
   ApolloProvider,
   ApolloClient,
   InMemoryCache,
-  createHttpLink,
+  createHttpLink
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -16,10 +16,10 @@ import AddService from "./screens/AddService";
 import UpdateService from "./screens/UpdateService";
 import NoMatch from "./components/NoMatch";
 import Booking from "./screens/Booking";
-
+import Footer from "./components/Footer";
 //Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: "https://gtxdetailing.herokuapp.com/graphql",
+  uri: "https://gtxdetailing.herokuapp.com/graphql"
 });
 // const httpLink = createHttpLink({
 //   uri: "/graphql",
@@ -37,8 +37,8 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
+      authorization: token ? `Bearer ${token}` : ""
+    }
   };
 });
 
@@ -48,7 +48,7 @@ const client = new ApolloClient({
   // Set up our client to execute queries and mutations using the endpoint
   // Set up our client to execute the `authLink` middleware before each request
   link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache()
 });
 
 function App() {
