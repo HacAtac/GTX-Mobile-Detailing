@@ -52,7 +52,10 @@ function Navbar() {
             ) : (
               <>
                 <li className="nav-item active">
-                  <a className="nav-link" href="/booking">
+                  <a
+                    className="nav-link"
+                    href="https://gtxdetailing.herokuapp.com/login"
+                  >
                     Book Now
                   </a>
                 </li>
@@ -60,7 +63,12 @@ function Navbar() {
             )}
 
             <li className="nav-item">
-              <a className="nav-link" href="/login"></a>
+              <a
+                className="nav-link"
+                href="https://gtxdetailing.herokuapp.com/login"
+              >
+                Login
+              </a>
             </li>
           </ul>
         </div>

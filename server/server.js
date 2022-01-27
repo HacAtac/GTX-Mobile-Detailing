@@ -61,7 +61,7 @@ const app = express();
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers,
+  resolvers
 });
 
 server.applyMiddleware({ app });
