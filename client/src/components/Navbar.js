@@ -59,6 +59,11 @@ function Navbar() {
                     Book Now
                   </a>
                 </li>
+                <li className="nav-item active">
+                  <a className="nav-link" href="/booking">
+                    About GTX
+                  </a>
+                </li>
               </>
             )}
 
