@@ -23,8 +23,22 @@ code {
 .nav-link {
   color: white !important;
   font-size: 30px;
+  padding-right: 40px;
 }
 
+.nav-link:hover {
+  color: tan;
+}
+
+.nav-item {
+  color: white !important;
+  font-size: 30px;
+  padding-right: 40px;
+}
+
+.nav-item:hover {
+  color: yellow;
+}
 .navbar-brand {
   color: rgb(39, 34, 34) !important;
   font-size: 40px;
