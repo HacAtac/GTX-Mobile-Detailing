@@ -1,5 +1,9 @@
 # 🏗️ GTX-Mobile-Detailing for a Client
 
+
+https://user-images.githubusercontent.com/87912247/151516945-41a3c6ec-9320-4539-acf5-526f29a71ebd.mov
+
+
 ## Table of Contents
 
 - [Description](#Description)
@@ -52,7 +56,6 @@ GTX Mobile Detailing is committed to providing a stress-free, valuable experienc
 ## Deployed Application
 
 https://gtxdetailing.herokuapp.com/
-https://images.zenhubusercontent.com/446998314/9be8f521-9dec-4464-b5c8-45b136c213f7/screen_recording_2022_01_28_at_1_45_59.mov
 
 ## Languages
 
