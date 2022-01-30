@@ -34,7 +34,7 @@ function AddService() {
     <div className="flex-column justify-flex-start min-100-vh">
       <h1 className="page-title">ADD SERVICE</h1>
       <div className="flex-row justify-space-between">
-        <div className="card">
+        <div className="card" id="card">
           <h3 className="card-title">Name</h3>
           <input
             className="input-field"
