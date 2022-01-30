@@ -1,6 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import Auth from "../utils/auth";
+import About from "../screens/About";
 
 function Navbar() {
   const logout = (event) => {
@@ -57,6 +58,11 @@ function Navbar() {
                 <li className="nav-item active">
                   <a className="nav-link" href="/booking">
                     Book Now
+                  </a>
+                </li>
+                <li className="nav-item active">
+                  <a className="nav-link" href="/about">
+                    About GTX
                   </a>
                 </li>
               </>
