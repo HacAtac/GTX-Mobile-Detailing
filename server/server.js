@@ -66,7 +66,8 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true })); // extended: false means that we only get strings and not objects
+//exteded: true means that we get objects and arrays as well
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {

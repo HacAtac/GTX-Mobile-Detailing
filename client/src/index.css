@@ -78,6 +78,28 @@ code {
   animation: flash 1s ease-in-out infinite;
 }
 
+#update-title {
+  font-weight: bold;
+  color: #ffc107;
+  text-shadow: black 0px 0px 10px;
+  margin-bottom: 30px;
+  /* flash in and out with a delay of 1s */
+  animation: flash 1s ease-in-out infinite;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+#service-title {
+  font-weight: bold;
+  color: #ffc107;
+  text-shadow: black 0px 0px 10px;
+  margin-bottom: 30px;
+  /* flash in and out with a delay of 1s */
+  animation: flash 1s ease-in-out infinite;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
 #card-container {
   justify-content: center !important;
 }
@@ -93,6 +115,33 @@ code {
   margin-bottom: 1rem;
   width: 40%;
   margin: auto;
+  box-shadow: #ffc107 0px 0px 10px;
+}
+
+#update-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.25rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#add-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  border-radius: 5px;
+  color: black;
+  font-size: 1.25rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #cards {
@@ -121,16 +170,13 @@ code {
 #cards:hover {
   transform: translateY(-10px);
   transition: all 0.5s ease-in-out;
+  box-shadow: black 0px 0px 50px;
 }
 
 /* #cards:hover {
   transform: scale(0.9);
   transition: all 0.5s ease-in-out;
 } */
-
-#cards:hover {
-  box-shadow: black 0px 0px 50px;
-}
 
 #card-title {
   font-size: 30px;

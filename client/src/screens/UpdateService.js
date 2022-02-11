@@ -52,7 +52,9 @@ function UpdateService() {
 
   return (
     <div className="flex-column justify-flex-start min-100-vh">
-      <h1 className="page-title">UPDATE SERVICE</h1>
+      <h1 className="page-title" id="update-title">
+        UPDATE SERVICE
+      </h1>
       <div className="flex-row justify-space-between">
         <div className="card" id="card">
           <h3 className="card-title">Name</h3>
@@ -104,7 +106,11 @@ function UpdateService() {
             value={largePrice}
             onChange={(e) => setLargePrice(e.target.value)}
           />
-          <button className="button" onClick={() => updateService()}>
+          <button
+            id="update-btn"
+            className="button"
+            onClick={() => updateService()}
+          >
             {" "}
             Update Service{" "}
           </button>{" "}
