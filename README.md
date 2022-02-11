@@ -10,7 +10,7 @@
 - [User Story](#user_story)
 
 ## Description
-
+GTX Mobile Detailing is committed to providing a stress-free, valuable experience and workmanship to both new and returning customers at customer’s appointed locations.  With service types such as Platinum Interior, Premiere, and Premium, our team’s commitment is creating a relevant UI that can be viewed and make appointment by customers. Updating information asynchronously is critical point GTX administration, and our team asure the operation with MERN stack for total full stack development.
 ## Technologies
 
 - MongoDB with Mongoose ODM
@@ -48,6 +48,11 @@
 - [Kumiko Yamagata](https://kumiyam.github.io/My-Portfolio2/)
 
 ## Deployed Application
+https://gtxdetailing.herokuapp.com/
+![image](https://user-images.githubusercontent.com/87215152/150638994-92b58ebd-89dc-4fff-b3b9-89e7a119835b.png)
+
+
+
 
 ## Languages
 
@@ -60,7 +65,7 @@
 
 ## Features
 
-- Calendly API (Booking-future development)
-- login (Authentication)
-- CRUD methods on services.
+- Calendly API for booking services
+- login (Authentication with JWT)
+- CRUD methods on services for business owner.
 - Stripe (Payment-future development)
