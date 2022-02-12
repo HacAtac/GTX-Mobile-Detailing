@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { useMutation } from "@apollo/client";
 import { QUERY_SERVICES } from "../utils/queries";
@@ -27,6 +27,14 @@ const Home = () => {
     },
   });
 
+  // const [search, setSearch] = React.useState("");
+  // const services = data.services;
+  // const filtered = services.filter((service) =>
+  //   service.name.toLowerCase().includes(search.toLowerCase())
+  // );
+
+  //logic to filter services based off of users search input in the search bar
+
   const { loading, error, data } = useQuery(QUERY_SERVICES);
   //what is useQuery and where does it come from?
   //it is a hook that allows us to use the query from the utils/queries file and get the data to show up on the page
@@ -38,12 +46,14 @@ const Home = () => {
     <div className="row m-2 p-3" id="card-container">
       <h1 id="page-title">SERVICES</h1>
 
-      <input
+      {/* <input
         type="text"
         className="form-control"
         placeholder="Search"
         id="search-input"
-      />
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      /> */}
 
       {data.services.map((service) => (
         <div className="card col-md-3" id="cards" key={service._id}>
